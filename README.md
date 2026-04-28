@@ -62,3 +62,24 @@ All output is written to `<model>/`:
 - [MACE-torch](https://github.com/ACEsuit/mace) >= 0.3.15 (required for `mace` model; others are optional)
 
 GPU acceleration is used automatically when CUDA is available.
+
+## Environment (using uv)
+
+This project uses a uv lockfile (uv.lock) to pin Python dependencies. Recommended steps to create a reproducible environment:
+
+1. Ensure Python 3.11+ and pip are installed.
+2. Install the uv CLI if not present:
+
+   pip install uv
+
+3. Sync the environment from the lockfile (creates and installs into a virtual environment):
+
+   uv sync
+
+4. Activate the created venv (if uv places it at .venv):
+
+   - macOS / Linux: source .venv/bin/activate
+   - Windows (PowerShell): .\.venv\Scripts\Activate.ps1
+
+If uv creates the environment at another path, follow uv's output to activate it. For GPU support, install the appropriate CUDA build of PyTorch following https://pytorch.org/ after syncing.
+
