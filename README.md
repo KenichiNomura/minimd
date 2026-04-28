@@ -15,13 +15,13 @@ Trajectories are saved as both `.traj` (ASE binary) and `.xyz` files under a sub
 
 | Flag | Model |
 |------|-------|
-| `mace` | MACE-MP (medium, float64) |
-| `nequip` | NequIP — requires `NequIP-OAM-L-0.1.nequip.pth` |
-| `allegro` | Allegro — requires `Allegro-OAM-L-0.1.nequip.pth` |
-| `mattersim` | MatterSim |
-| `sevennet` | SevenNet (7net-omni) |
-| `upet` | UPET (pet-omat-m v1.0.0) |
-| `uma` | UMA via FAIRChem — requires `uma-s-1p1.pt` |
+| `mace` | [MACE-MP](https://github.com/ACEsuit/mace) — MACE reference implementation (medium, float64) |
+| `nequip` | [NequIP](https://github.com/mir-group/nequip) — E(3)-equivariant potentials; pre-trained models at https://www.nequip.net |
+| `allegro` | [Allegro](https://github.com/mir-group/allegro) — scalable equivariant interatomic potentials |
+| `mattersim` | MatterSim — project page / repository (TBD) |
+| `sevennet` | SevenNet — project page / repository (TBD) |
+| `upet` | UPET — project page / repository (TBD) |
+| `uma` | UMA via FAIRChem — project page / repository (TBD) |
 
 ## Usage
 
@@ -82,4 +82,17 @@ This project uses a uv lockfile (uv.lock) to pin Python dependencies. Recommende
    - Windows (PowerShell): .\.venv\Scripts\Activate.ps1
 
 If uv creates the environment at another path, follow uv's output to activate it. For GPU support, install the appropriate CUDA build of PyTorch following https://pytorch.org/ after syncing.
+
+## References
+
+- MACE: ACEsuit MACE repository — https://github.com/ACEsuit/mace. Documentation and citations: https://mace-docs.readthedocs.io/ and the paper linked from the repository (see "References").
+
+- NequIP: NequIP repository — https://github.com/mir-group/nequip. Docs and citation info: https://nequip.readthedocs.io/ (see "References & citing" in the repo).
+
+- Allegro: Allegro repository — https://github.com/mir-group/allegro (see repository README for citation details).
+
+- MatterSim, SevenNet, UPET, UMA: project pages / canonical repositories and publication references are not unambiguously discoverable from this repository. Please provide preferred links or allow me to look them up and add exact citations.
+
+(If preferred, exact paper citations (authors, title, venue, year, DOI) can be added to each entry.)
+
 
