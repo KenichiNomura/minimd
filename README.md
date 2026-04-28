@@ -15,13 +15,13 @@ Trajectories are saved as both `.traj` (ASE binary) and `.xyz` files under a sub
 
 | Flag | Model |
 |------|-------|
-| `mace` | [MACE-MP](https://github.com/ACEsuit/mace) — MACE reference implementation (medium, float64). Paper: NeurIPS 2022 (OpenReview) https://openreview.net/forum?id=YPpSngE-ZU. Code DOI: https://doi.org/10.5281/zenodo.14103332 |
-| `nequip` | [NequIP](https://github.com/mir-group/nequip) — E(3)-equivariant potentials; pre-trained models at https://www.nequip.net. Paper: Nature Communications 2022, DOI: https://doi.org/10.1038/s41467-022-29939-5. Code DOI: https://doi.org/10.5281/zenodo.18200066 |
+| `mace` | [MACE-MP](https://github.com/ACEsuit/mace) — MACE reference implementation (medium, float64). Paper: NeurIPS 2022 (OpenReview) https://openreview.net/forum?id=YPpSngE-ZU. Foundation model paper (JCP 2025): https://pubs.aip.org/aip/jcp/article/163/18/184110/3372267/A-foundation-model-for-atomistic-materials. |
+| `nequip` | [NequIP](https://github.com/mir-group/nequip) — E(3)-equivariant potentials; pre-trained models at https://www.nequip.net. Paper: Nature Communications 2022, DOI: https://doi.org/10.1038/s41467-022-29939-5. |
 | `allegro` | [Allegro](https://github.com/mir-group/allegro) — scalable equivariant interatomic potentials. Paper: Nature Communications 2023, DOI: https://doi.org/10.1038/s41467-023-36329-y |
-| `mattersim` | MatterSim — project page / repository (TBD) |
-| `sevennet` | SevenNet — project page / repository (TBD) |
-| `upet` | UPET — project page / repository (TBD) |
-| `uma` | UMA via FAIRChem — project page / repository (TBD) |
+| `mattersim` | [MatterSim](https://microsoft.github.io/mattersim/) — Microsoft universal MLIP. |
+| `sevennet` | SevenNet  |
+| `upet` | UPET — universal PET model. Paper (Nature Communications 2025): https://www.nature.com/articles/s41467-025-65662-7. |
+| `uma` | [UMA](https://ai.meta.com/research/publications/uma-a-family-of-universal-models-for-atoms/) via FAIRChem — Meta universal models for atoms. |
 
 ## Usage
 
@@ -88,6 +88,7 @@ If uv creates the environment at another path, follow uv's output to activate it
 - MACE
   - Repository: https://github.com/ACEsuit/mace
   - Paper (NeurIPS 2022): https://openreview.net/forum?id=YPpSngE-ZU
+  - Foundation model paper (JCP 2025): https://pubs.aip.org/aip/jcp/article/163/18/184110/3372267/A-foundation-model-for-atomistic-materials
   - Code / release DOI: https://doi.org/10.5281/zenodo.14103332
 
 - NequIP
@@ -101,9 +102,15 @@ If uv creates the environment at another path, follow uv's output to activate it
   - Paper (Nature Communications 2023): https://doi.org/10.1038/s41467-023-36329-y
   - Docs: https://allegro.readthedocs.io/
 
-- MatterSim, SevenNet, UPET, UMA
-  - Canonical project pages and publication DOIs could not be unambiguously identified automatically. If you provide the exact URLs or DOIs for these models I will add them; otherwise, permission to continue searching is requested.
+- MatterSim
+  - Project page: https://microsoft.github.io/mattersim/
 
-(If preferred, entries can be expanded to full BibTeX references.)
+- UPET (PET)
+  - Paper (Nature Communications 2025): https://www.nature.com/articles/s41467-025-65662-7
 
+- UMA
+  - Publication: https://ai.meta.com/research/publications/uma-a-family-of-universal-models-for-atoms/
+
+- SevenNet
+  - Canonical project page / publication DOI: TBD
 
