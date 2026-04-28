@@ -15,9 +15,9 @@ Trajectories are saved as both `.traj` (ASE binary) and `.xyz` files under a sub
 
 | Flag | Model |
 |------|-------|
-| `mace` | [MACE-MP](https://github.com/ACEsuit/mace) — MACE reference implementation (medium, float64) |
-| `nequip` | [NequIP](https://github.com/mir-group/nequip) — E(3)-equivariant potentials; pre-trained models at https://www.nequip.net |
-| `allegro` | [Allegro](https://github.com/mir-group/allegro) — scalable equivariant interatomic potentials |
+| `mace` | [MACE-MP](https://github.com/ACEsuit/mace) — MACE reference implementation (medium, float64). Paper: NeurIPS 2022 (OpenReview) https://openreview.net/forum?id=YPpSngE-ZU. Code DOI: https://doi.org/10.5281/zenodo.14103332 |
+| `nequip` | [NequIP](https://github.com/mir-group/nequip) — E(3)-equivariant potentials; pre-trained models at https://www.nequip.net. Paper: Nature Communications 2022, DOI: https://doi.org/10.1038/s41467-022-29939-5. Code DOI: https://doi.org/10.5281/zenodo.18200066 |
+| `allegro` | [Allegro](https://github.com/mir-group/allegro) — scalable equivariant interatomic potentials. Paper: Nature Communications 2023, DOI: https://doi.org/10.1038/s41467-023-36329-y |
 | `mattersim` | MatterSim — project page / repository (TBD) |
 | `sevennet` | SevenNet — project page / repository (TBD) |
 | `upet` | UPET — project page / repository (TBD) |
@@ -85,14 +85,25 @@ If uv creates the environment at another path, follow uv's output to activate it
 
 ## References
 
-- MACE: ACEsuit MACE repository — https://github.com/ACEsuit/mace. Documentation and citations: https://mace-docs.readthedocs.io/ and the paper linked from the repository (see "References").
+- MACE
+  - Repository: https://github.com/ACEsuit/mace
+  - Paper (NeurIPS 2022): https://openreview.net/forum?id=YPpSngE-ZU
+  - Code / release DOI: https://doi.org/10.5281/zenodo.14103332
 
-- NequIP: NequIP repository — https://github.com/mir-group/nequip. Docs and citation info: https://nequip.readthedocs.io/ (see "References & citing" in the repo).
+- NequIP
+  - Repository: https://github.com/mir-group/nequip
+  - Paper (Nature Communications 2022): https://doi.org/10.1038/s41467-022-29939-5
+  - Code / release DOI: https://doi.org/10.5281/zenodo.18200066
+  - Docs: https://nequip.readthedocs.io/
 
-- Allegro: Allegro repository — https://github.com/mir-group/allegro (see repository README for citation details).
+- Allegro
+  - Repository: https://github.com/mir-group/allegro
+  - Paper (Nature Communications 2023): https://doi.org/10.1038/s41467-023-36329-y
+  - Docs: https://allegro.readthedocs.io/
 
-- MatterSim, SevenNet, UPET, UMA: project pages / canonical repositories and publication references are not unambiguously discoverable from this repository. Please provide preferred links or allow me to look them up and add exact citations.
+- MatterSim, SevenNet, UPET, UMA
+  - Canonical project pages and publication DOIs could not be unambiguously identified automatically. If you provide the exact URLs or DOIs for these models I will add them; otherwise, permission to continue searching is requested.
 
-(If preferred, exact paper citations (authors, title, venue, year, DOI) can be added to each entry.)
+(If preferred, entries can be expanded to full BibTeX references.)
 
 
